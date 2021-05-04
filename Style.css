@@ -1,0 +1,171 @@
+        html {
+            background-color: #afafaf;
+        }
+        body {
+            max-width: 1000px;
+            margin: auto;
+            font-family: cursive;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+            ul li {
+                cursor: pointer;
+                position: relative;
+                padding: 12px 8px 12px 40px;
+                list-style-type: none;
+                background: #eee;
+                font-size: 18px;
+                transition: 0.2s;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                border-radius: 5px;
+            }
+                ul li:nth-child(odd) {
+                    background: #f9f9f9;
+                }
+                ul li:hover {
+                    background: #ddd;
+                }
+                ul li.check-li {
+                    background: #888;
+                    color: #fff;
+                    text-decoration: line-through;
+                }
+                    ul li.check-li::before {
+                        content: '';
+                        position: absolute;
+                        border-color: #fff;
+                        border-style: solid;
+                        border-width: 0 2px 2px 0;
+                        top: 10px;
+                        left: 16px;
+                        transform: rotate(45deg);
+                        height: 15px;
+                        width: 7px;
+                    }
+        .close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 12px 16px 12px 16px;
+            border-radius: 5px;
+        }
+
+            .close:hover {
+                background-color: #f44336;
+                color: white;
+            }
+        .header {
+            background-color: #3656f4;
+            padding: 30px 40px;
+            margin-top: 50px;
+            color: white;
+            text-align: center;
+            position: relative;
+            border-radius: 5px;
+        }
+            .header:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        input {
+            margin: 0;
+            border: none;
+            border-radius: 0;
+            width: 75%;
+            padding: 10px;
+            float: left;
+            font-size: 16px;
+            transition: all 0.2s;
+            
+        }
+        .addinput {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .addBtn {
+            padding: 10px;
+            width: 25%;
+            background: #d9d9d9;
+            color: #555;
+            float: left;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+            border-radius: 0;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+            .addBtn:hover {
+                background-color: #bbb;
+            }
+
+        .search-div {
+            display: flex;
+            position: absolute;
+            right: 30px;
+            top: -20px;
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0s, opacity 0.2s linear, top 0.2s;
+        }
+
+        .plus-div {
+            display: flex;
+            justify-content: flex-end;
+            width: 87%;
+        }
+
+            .plus-div span {
+                padding: 10px;
+                background-color: white;
+                color: black;
+                border-radius: 5px;
+                display: flex;
+            }
+
+                .plus-div span:hover {
+                    cursor: pointer;
+                }
+
+        .d-none {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.2s linear, top 0.2s;
+            top: 0;
+        }
+
+        .plusicn {
+            transition: all 0.2s;
+        }
+
+        .spin {
+            transform: rotate( 45deg );
+        }
+        .title {
+            margin: 5px;
+            position: absolute;
+            left: 40%;
+        }
+        input.searchinput {
+            position: absolute;
+            left: 60px;
+            width: 200px;
+            border-radius: 5px;
+        }
+        .searchicn {
+            position: absolute;
+            left: 230px;
+            top: 40px;
+            color: #3656f4;
+        }

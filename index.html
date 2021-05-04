@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo App - MKV</title>
+    <meta name="author" content="MKV" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+    <div id="myDIV" class="header">
+        <h2 class="title">To Do App</h2>
+        <input id="search" class="searchinput" type="text" placeholder="search..." /><i class="fa fa-search searchicn"></i>
+        <div class="plus-div">
+            <span class="plusbtn">
+                <i class="fa fa-plus plusicn"></i>
+            </span>
+        </div>
+        <div class="search-div d-none">
+            <input class="addinput" type="text" id="addInput" placeholder="Title...">
+            <span onclick="newElem()" class="addBtn">Add</span>
+        </div>
+    </div>
+
+    <ul id="matUL">
+        <li>Go to Work</li>
+        <li>Learn TypeScript</li>
+        <li>Read LOTR Vol.2</li>
+        <li class ="check-li">Pay Debts</li>
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Script.js"></script>
+
+</body>
+</html>
